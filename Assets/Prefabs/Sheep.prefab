@@ -199,8 +199,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.1630752, y: 0.9954027, z: 0.79539526}
-  m_Center: {x: 0, y: 0.4849946, z: -0.011102021}
+  m_Size: {x: 1.404531, y: 0.9954027, z: 1.7445652}
+  m_Center: {x: -0.008326024, y: 0.4849946, z: 0.030528307}
 --- !u!114 &-2418649272234008176
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -255,7 +255,7 @@ MonoBehaviour:
   canInteractable: 1
   deadAnimationTime: 1
   chopAnimationTime: 1
-  resetSheepTime: 10
+  resetSheepTime: 5
   steakSpawnSmokeVFX: {fileID: 153256, guid: fe394d041df1a0547990f49cf653249f, type: 3}
   steakPrefab: {fileID: 212423199489857406, guid: 7c9f753d9b1ce5140af2bb9f0688c538, type: 3}
 --- !u!1 &3326781497434975863
