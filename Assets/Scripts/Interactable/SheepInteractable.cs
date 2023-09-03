@@ -28,7 +28,11 @@ public class SheepInteractable : Interactable
     {
         yield return new WaitForSeconds(deadAnimationTime);
         Instantiate(steakSpawnSmokeVFX,transform.position,steakSpawnSmokeVFX.transform.rotation);
-        transform.DOScale(Vector3.zero, 1);
+        transform.DOScale(Vector3.zero, 1).OnComplete(() =>
+        {
+            GetComponent<SheepPatrol>().stopMove = false;
+            GetComponent<SheepPatrol>().speed = GetComponent<SheepPatrol>().maxSpeed;
+        });
         
         yield return new WaitForSeconds(.1f);
         Instantiate(steakPrefab,transform.position,steakPrefab.transform.rotation);
@@ -48,6 +52,9 @@ public class SheepInteractable : Interactable
         GetComponent<Animator>().SetBool("Dead",false);
         canInteractable = true;
         GetComponent<SheepPatrol>().stopMove = false;
-        transform.DOScale(Vector3.one, .25f);
+        transform.DOScale(Vector3.one, .25f).OnComplete(() =>
+        {
+            GetComponent<SheepPatrol>().speed = GetComponent<SheepPatrol>().defaultSpeed;
+        });
     }
 }

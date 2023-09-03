@@ -105,7 +105,6 @@ GameObject:
   - component: {fileID: 3326781497290907523}
   - component: {fileID: 3326781497290907526}
   - component: {fileID: 3326781497290907521}
-  - component: {fileID: 3326781497290907520}
   - component: {fileID: 6836078487694880516}
   - component: {fileID: -2418649272234008176}
   - component: {fileID: 8020524999579197945}
@@ -189,20 +188,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!136 &3326781497290907520
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3326781497290907522}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.36061633
-  m_Height: 1.1073626
-  m_Direction: 2
-  m_Center: {x: -0.00035232306, y: 0.42852724, z: 0.01883167}
 --- !u!65 &6836078487694880516
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -233,6 +218,8 @@ MonoBehaviour:
   minZ: 0
   maxZ: 0
   numberOfPatrolPoints: 5
+  maxSpeed: 3
+  defaultSpeed: 0.5
   speed: 0.3
   thresholdDistance: 0.1
   stopMove: 0
@@ -264,11 +251,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74fbe759b24bab346a1c3f0291d29e5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coolDown: 2
+  coolDown: 1
   canInteractable: 1
   deadAnimationTime: 1
   chopAnimationTime: 1
-  resetSheepTime: 4
+  resetSheepTime: 10
   steakSpawnSmokeVFX: {fileID: 153256, guid: fe394d041df1a0547990f49cf653249f, type: 3}
   steakPrefab: {fileID: 212423199489857406, guid: 7c9f753d9b1ce5140af2bb9f0688c538, type: 3}
 --- !u!1 &3326781497434975863

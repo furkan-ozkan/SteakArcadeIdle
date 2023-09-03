@@ -31,7 +31,7 @@ public class AudioManager : MonoBehaviour
         AudioSource source = audioObject.AddComponent<AudioSource>();
         source.volume = volume;
         source.clip = audio;
-        source.spatialBlend = Single.MaxValue;
+        source.spatialBlend = .5f;
         source.Play();
         StartCoroutine(DestroyAudioObject(audio.length,audioObject));
     }

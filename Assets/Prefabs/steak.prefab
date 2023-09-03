@@ -9,9 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 212423199489857346}
-  - component: {fileID: 212423199489857407}
   - component: {fileID: 9195139935771786862}
   - component: {fileID: 7562941872283870301}
+  - component: {fileID: 2537489512570137906}
   m_Layer: 0
   m_Name: steak
   m_TagString: Untagged
@@ -28,26 +28,13 @@ Transform:
   m_GameObject: {fileID: 212423199489857406}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.0381, z: 0.85965}
-  m_ConstrainProportionsScale: 1
+  m_LocalScale: {x: 0.85965, y: 0.0381, z: 0.5}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8039274724951499010}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &212423199489857407
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 212423199489857406}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 4.0271907, y: 8.5906925, z: 2.331278}
-  m_Center: {x: 0.0052735806, y: 3.294861, z: -0.0030654809}
 --- !u!114 &9195139935771786862
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -80,6 +67,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!135 &2537489512570137906
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 212423199489857406}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 2
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &5323576403772980692
 GameObject:
   m_ObjectHideFlags: 0

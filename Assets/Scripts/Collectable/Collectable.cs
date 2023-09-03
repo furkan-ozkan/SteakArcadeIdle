@@ -8,5 +8,6 @@ public class Collectable : MonoBehaviour
 public enum CollectableType
 {
     Empty,
+    Money,
     Steak
 }

@@ -8,6 +8,8 @@ public class SheepPatrol : MonoBehaviour
 {
     public float minX, maxX, minZ, maxZ;
     public int numberOfPatrolPoints = 10;
+    public float maxSpeed = 3f;
+    public float defaultSpeed = .5f;
     public float speed = .5f;
     public float thresholdDistance = 0.1f;
 

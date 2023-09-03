@@ -45,6 +45,7 @@
 *-[Nn]av[Mm]esh.asset -unityyaml lfs
 
 *.unity lfs
+*.asset lfs
 
 # Image
 *.jpg lfs
